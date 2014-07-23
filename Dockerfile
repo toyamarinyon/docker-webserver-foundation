@@ -11,6 +11,6 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 # install dependency
-RUN apt-get -y install curl git-core build-essential libssl-dev man
+RUN apt-get -y install curl git-core
 
 RUN apt-get install nginx
