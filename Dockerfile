@@ -11,3 +11,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 RUN apt-get install -y curl git-core nginx
+
+EXPOSE 80
+
+CMD ["service","nginx","start"]
