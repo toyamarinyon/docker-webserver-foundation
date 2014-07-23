@@ -10,7 +10,4 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt
 RUN apt-get update
 RUN apt-get upgrade -y
 
-# install dependency
-RUN apt-get -y install curl git-core
-
-RUN apt-get install nginx
+RUN apt-get install -y curl git-core nginx
